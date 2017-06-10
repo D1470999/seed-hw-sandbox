@@ -1,8 +1,10 @@
-total = 1
-i = 1
-while i <= 20:
-    total *= i
-    i += 1
-print(total)
-for i in range(20):
-    print(i)
+
+
+for i in range(1, 101):
+    for x in range(2, i - 1):
+        if i % x == 0:
+            print ("Not prime")
+        else:
+            print ("prime")
+    if i > 100:
+        break
